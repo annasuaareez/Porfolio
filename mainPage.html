@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Suárez</title>
+    <link rel="stylesheet" href="NavAndFooter.css">
+</head>
+<body>
+    <section class="menu">
+        <div class="menu-photo">
+            <img src="Photos/logo.png" alt="Foto logo">
+        </div>
+        <ul>
+            <li><a href="mainPage.html">Home</a></li>
+            <li><a href="#">Proyect</a></li>
+            <li><a href="#">Ana</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </section>
+    <main class="main">
+
+    </main>
+    
+    <section class="footer">
+        <div class="linea"></div>
+        <div class="footer-content">
+            <div class="footer-column">
+                <img src="Photos/logo.png" alt="logo" class="logo">
+                <p>Desarrolladora de aplicaciones multiplataforma</p>
+            </div>
+            <div class="footer-column">
+                <ul>
+                    <li><a href="mainPage.html">Home</a></li>
+                    <li><a href="#">Proyect</a></li>
+                    <li><a href="#">Ana</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <div>
+                    <p>Madrid, España</p>
+                    <p>a.suarez.villaescusa@gmail.com</p>
+                </div>
+                <div>
+                    <a href="#" target="_blank"><img src="Photos/github.png" alt="github"></a>
+                    <a href="#" target="_blank"><img src="Photos/linkedin.png" alt="linkedin"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Ana Suárez. All rights reserved.</p>
+        </div>
+    </section>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+</html>

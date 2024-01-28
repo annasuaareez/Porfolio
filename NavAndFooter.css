@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'gelosa_cara';
+    src: url('Font/gelosa_cara.otf');
+}
+
+@font-face {
+    font-family: 'manrope';
+    src: url('Font/manrope.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*NAVEGACIÓN*/
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.menu-photo img {
+    width: 60px;
+    height: auto;
+    margin-left: 20px;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: right;
+}
+
+.menu a {
+    font-family: 'gelosa_cara', sans-serif;
+    font-size: 40px;
+    text-decoration: none;
+    margin-right: 40px;
+    color: black;
+    position: relative;
+}
+
+.menu a::after {
+    content: ''; 
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px; 
+    background-color: black;
+    transition: width 0.3s;
+}
+
+.menu a:hover::after,
+.menu a:focus::after {
+    width: 100%; 
+}
+
+/*MAIN*/
+.main{
+    height: 200px;
+}
+
+/*FOOTER*/
+.footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'manrope', sans-serif;
+    font-size: 13px;
+}
+
+.linea {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 40px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+    height: fit-content;
+    font-size: 12px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column .logo {
+    width: 50px;
+}
+
+.footer-column img {
+    width: 23px;
+}
+
+.footer-column ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+.footer-column a {
+    text-decoration: none;
+    margin-right: 40px;
+    color: black;
+    position: relative;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    font-size: 11px;
+}
