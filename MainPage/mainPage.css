@@ -1,0 +1,78 @@
+/*MAIN*/
+.main{
+    margin-top: 80px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.projects p {
+    font-family: 'gelosa_cara', sans-serif;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.project-images {
+    display: flex;
+    flex-direction: row;
+}
+
+.project {
+    position: relative;
+    width: 240px;
+    height: 440px;
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-out;
+}
+
+.project-name {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 18px;
+    opacity: 0; 
+    z-index: 1;
+    transition: opacity 0.3s ease-out;
+}
+
+.project:hover .project-name {
+    opacity: 1;
+}
+
+.project::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); 
+    transition: background-color 0.3s ease-out;
+}
+
+.project:hover::after {
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.project:hover img {
+    transform: scale(1.1);
+}
+
+.project:hover::before {
+    background-color: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad según sea necesario */
+}
