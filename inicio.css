@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'Manrope';
+    src: url('Font/manrope.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #15213E;
+}
+
+body {
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#nombre {
+    opacity: 0;
+    font-size: 4em;
+    color: #ECFAFF;
+    top: calc(50% - 40px);
+    position: absolute;
+    transform: translateY(-50%);
+    animation: fadeIn 2s ease-in-out forwards; 
+}
+
+#lineaCarga {
+    position: fixed;
+    top: calc(50%);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background-color: #ECFAFF;
+    transition: width 2s ease-in-out;
+}
+
+#hueco {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #ECFAFF;
+    z-index: 1;
+    overflow: hidden;
+    transition: height 2s ease-in-out;
+    transform: translateY(-50%);
+}
+
+#mainPage {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
